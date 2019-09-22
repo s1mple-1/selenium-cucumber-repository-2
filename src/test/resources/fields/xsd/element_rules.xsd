@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:redefine schemaLocation="selenium_element_rules.xsd">
+        <xs:complexType name="PageType">
+            <xs:complexContent>
+                <xs:extension base="PageType">
+                    <xs:attribute type="DriverType" name="driver"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+        <xs:complexType name="FieldType">
+            <xs:complexContent>
+                <xs:extension base="FieldType">
+                    <xs:attribute type="TemplateType" name="template"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:redefine>
+    <xs:simpleType name="DriverType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Chrome"/>
+            <xs:enumeration value="Winium"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TemplateType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Button"/>
+            <xs:enumeration value="Link"/>
+            <xs:enumeration value="TextInput"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

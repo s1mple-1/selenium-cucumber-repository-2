@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../fields/xsd/element_rules.xsd">
+    <Page name="Главная">
+        <TextInput name="Строка поиска" locator="//input[@aria-label='Запрос' and @id='text']"/>
+        <Button name="Найти" locator="//button[.//*[text()='Найти']]"/>
+    </Page>
+    <Page name="Резульат поиска">
+        <StaticText name="Дополнительная информация по запросу" locator=".//*[@aria-label='Дополнительная информация по запросу']" isLoaded="true"/>
+        <Collection name="Список результатов" locator="//ul[@aria-label='Результаты поиска']/li">
+            <StaticText name="Заголовок" locator=".//*[contains(@class, '__url-text')]"/>
+            <Link name="Ссылка" locator=".//a[contains(@class, 'link_theme_outer')]/b"/>
+        </Collection>
+    </Page>
+</Pages>

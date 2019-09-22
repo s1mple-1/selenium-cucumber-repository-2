@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/template_rules.xsd">
+    <Template name="Button" locator=".//*[contains(@class, 'button-text') and .//*[text()='%1$s']]"/>
+    <Template name="Link" locator=".//a[normalize-space()='%1$s']"/>
+</Templates>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- READONLY BASE XML SCHEMA from Chameleon library (c) aplana.com -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:redefine schemaLocation="base_element_rules.xsd">
+        <xs:group name="FieldsType">
+            <xs:choice>
+                <xs:element type="FieldType" name="Button" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element type="FieldType" name="TextBox" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element type="FieldType" name="TextInput" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element type="FieldType" name="CheckBox" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element type="FieldType" name="ComboBox" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element type="FieldType" name="StaticText" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element type="FieldType" name="Link" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+        </xs:group>
+    </xs:redefine>
+</xs:schema>

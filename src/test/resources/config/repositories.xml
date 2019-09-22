@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+       default-lazy-init="true">
+    <bean id="loaderElements" class="com.aplana.chameleon.definitions.repository.xmlloader.LoaderXmlImpl">
+        <property name="factory">
+            <bean class="com.aplana.chameleon.definitions.repository.selenium.LoaderXmlFactorySeleniumImpl"/>
+        </property>
+    </bean>
+    <bean id="loaderTemplates" class="com.aplana.chameleon.definitions.repository.xmlloader.LoaderXmlImpl">
+        <property name="factory">
+            <bean class="com.aplana.chameleon.definitions.repository.selenium.LoaderXmlFactoryTemplateImpl"/>
+        </property>
+    </bean>
+    <bean class="com.aplana.chameleon.definitions.repository.RepositoryManagerImpl" primary="true">
+        <property name="repositories">
+            <list>
+                <bean class="com.aplana.chameleon.definitions.repository.RepositoryWrapperImpl">
+                    <property name="fileName" value="classpath:/fields/element_definitions.xml"/>
+                    <property name="loader" ref="loaderElements"/>
+                </bean>
+                <bean class="com.aplana.chameleon.definitions.repository.RepositoryWrapperImpl">
+                    <property name="fileName" value="classpath:/fields/template_definitions.xml"/>
+                    <property name="loader" ref="loaderTemplates"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+</beans>
