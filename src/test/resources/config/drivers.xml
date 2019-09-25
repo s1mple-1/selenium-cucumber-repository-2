@@ -16,7 +16,7 @@
         <property name = "screenshotConfiguration">
             <value type = "com.aplana.chameleon.reporter.ScreenshotConfiguration">FOR_FAILURES</value>
         </property>
-        <property name="applicationUrl" value="https://www.ya.ru"/>
+        <property name="applicationUrl" value="https://www.raiffeisen.ru/"/>
     </bean>
 
     <bean id = "exampleDriver" class = "com.aplana.chameleon.selenium.driver.WebDriverFacade" destroy-method="quit">
