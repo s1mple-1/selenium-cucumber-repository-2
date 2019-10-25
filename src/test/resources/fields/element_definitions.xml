@@ -13,33 +13,4 @@
             <Link name="Ссылка" locator=".//a[contains(@class, 'link_theme_outer')]/b"/>
         </Collection>
     </Page>
-    <Page name="Главная страница">
-        <Collection name="Главное меню" locator="//ul[@class='main-menu']//li">
-            <StaticText name="Наименование" locator="."/>
-        </Collection>
-        <Collection name="Подменю" locator="//a[contains(@class,'menu-section-link')][@href]">
-            <StaticText name="Наименование" locator="."/>
-        </Collection>
-    </Page>
-    <Page name="Депозиты">
-
-        <Collection name="Список депозитов" locator="//div[@class='b-card__content']">
-            <Button name="Наименование" locator=".//p[contains(@class,'e-title')]"/>
-            <Button name="Открыть" locator=".//*[contains(text(),'Открыть')]"/>
-        </Collection>
-    </Page>
-    <Page name="Депозит">
-        <Button name="Оставить заявку" locator="//a[text()='Оставить заявку'][@class='button']"/>
-        <TextInput name="Фамилия"/>
-        <TextInput name="Имя"/>
-        <TextInput name="Отчество"/>
-        <TextInput name="Дата рождения"/>
-        <TextInput name="Телефон"/>
-        <ComboBox name="Город" locator="//*[text()='Город']/parent::div/div"/>
-        <Button name="Отделение банка" locator="//*[text()='Отделение банка']/parent::div/div"/>
-        <Button name="Выслать код" locator="//*[text()='Выслать код']"/>
-        <Button name="Я подтверждаю" locator="//*[contains(text(),'подтверждаю')]/.."/>
-
-        <Button name="Осталось заполнить Телефон" locator="//div[@class='page-item__invalid'][.//div[text()='Осталось заполнить поля:']]//span[text()='Телефон']"/>
-    </Page>
 </Pages>
