@@ -15,7 +15,7 @@
         <repository>
             <id>aplana-chameleon</id>
             <name>Aplana Chameleon Framework</name>
-            <url>http://jenkins.aplana.com:8081/repository/aplana-chameleon</url>
+            <url>https://nexus.appline.ru/repository/aplana-chameleon</url>
         </repository>
     </repositories>
 
