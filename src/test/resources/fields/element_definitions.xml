@@ -6,9 +6,7 @@
         <Button name="Найти" locator="//button[.//*[text()='Найти']]"/>
     </Page>
     <Page name="Резульат поиска">
-        <StaticText name="Дополнительная информация по запросу"
-                    locator=".//*[@aria-label='Дополнительная информация по запросу']" isLoaded="true"/>
-        <Collection name="Список результатов" locator="//ul[@aria-label='Результаты поиска']/li">
+        <Collection name="Список результатов" locator="//ul[@aria-label='Результаты поиска']/li" isLoaded="true">
             <StaticText name="Заголовок" locator=".//*[contains(@class, '__url-text')]"/>
             <Link name="Ссылка" locator=".//a[contains(@class, 'link_theme_outer')]/b"/>
         </Collection>

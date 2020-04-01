@@ -1,0 +1,4 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<properties>
+    <property label="maven.wagon.http.ssl.insecure" name="maven.wagon.http.ssl.insecure" defaultValue="true" type="checkbox"/>
+</properties>
