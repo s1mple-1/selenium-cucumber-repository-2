@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.aplana.chameleon:chameleon-selenium-cucumber:2.8.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aplana/chameleon/chameleon-selenium-cucumber/2.8.0-SNAPSHOT/chameleon-selenium-cucumber-2.8.0-20200605.110411-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aplana/chameleon/chameleon-selenium-cucumber/2.8.0-SNAPSHOT/chameleon-selenium-cucumber-2.8.0-20200605.110411-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/aplana/chameleon/chameleon-selenium-cucumber/2.8.0-SNAPSHOT/chameleon-selenium-cucumber-2.8.0-20200605.110411-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

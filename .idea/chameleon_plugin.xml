@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChameleonPlugin">
+    <option name="version" value="2.14.0" />
+    <option name="settings">
+      <list>
+        <Setting>
+          <option name="name" value="closeDriverAfterTest" />
+          <option name="type" value="CheckBox" />
+          <option name="value" value="false" />
+        </Setting>
+        <Setting>
+          <option name="name" value="connectToRunningApp" />
+          <option name="type" value="CheckBox" />
+          <option name="value" value="false" />
+        </Setting>
+        <Setting>
+          <option name="name" value="maven.wagon.http.ssl.insecure" />
+          <option name="type" value="checkbox" />
+          <option name="value" value="true" />
+        </Setting>
+      </list>
+    </option>
+  </component>
+</project>

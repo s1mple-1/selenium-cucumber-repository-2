@@ -11,4 +11,18 @@
             <Link name="Ссылка" locator=".//a[contains(@class, 'link_theme_outer')]/b"/>
         </Collection>
     </Page>
+    <Page name="Главная страница">
+        <Collection name="Главное меню" locator="//ul[@class='main-menu']//li">
+            <Button name="Наименование" locator="."/>
+        </Collection>
+        <Collection name="Подменю" locator="//a[@class='menu-section-link']">
+            <Button name="Наименование" locator="."/>
+        </Collection>
+    </Page>
+    <Page name="Кредитные карты">
+        <Collection name="Карты" locator="//a[@class='b-card__link']"/>
+    </Page>
+    <Page name="Кредитная карта на 110 дней" template="" includePages="" driver="" waitTimeOut="" locator="">
+        <Button name="Оформить карту" locator="//a[text()='Оформить карту']"/>
+    </Page>
 </Pages>
